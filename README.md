@@ -43,11 +43,13 @@ def launch_session(self, x_args):
     self._init_child_env()
     self._setup_pulseaudio()
     self._setup_gnubby()
-    # 주석처리
-    #self._launch_x_server(x_args)
-    #self._launch_x_session()
-    # 추가코드 두줄
+
+    # 코드 2줄 추가
     display = self.get_unused_display_number()
     self.child_env["DISPLAY"] = ":%d" % display
+
+    # 주석
+    #self._launch_x_server(x_args)
+    #self._launch_x_session()
     
 ```
