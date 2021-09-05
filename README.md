@@ -74,6 +74,7 @@ def launch_session(self, x_args):
 - npm install pm2 -g
 
 # (pass) 8. vscode install 
+- root 계정으로 로그인 후 vscode 설치 
 
 # 9. code upload 
 - github elefarm-gw zip file download at Desktop 
