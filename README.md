@@ -66,8 +66,18 @@ def launch_session(self, x_args):
 - sudo mysql -uroot -p
   - root 비번 입력 
 
-# 7. nodejs, npm, pm2 install 
+# 7. nodejs, npm, yarn, pm2 install 
 - sudo apt install nodejs
 - sudo apt install npm
 - sudo -s
+- npm install yarn -g 
 - npm install pm2 -g
+
+# (pass) 8. vscode install 
+
+# 9. code upload 
+- github elefarm-gw zip file download at Desktop 
+- zip elefarm-gw.zip 
+- cd Desktop/elefarm-gw/back 
+- sudo -s
+- yarn install 
