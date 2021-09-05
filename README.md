@@ -1,6 +1,6 @@
 # ubuntu
 
-# root login 
+# 1. root login 
 - sudo apt-get update 
 - sudo apt install lightdm 
   - lightdm 선택 
@@ -12,7 +12,7 @@
 - (pass) 로그아웃 및 root 로그인 
 - reboot 
 
-# chrome install 
+# 2. chrome install 
 - (pass) sudo apt-get update 
 - wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 - sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
@@ -20,12 +20,12 @@
 - chrome 수동 설치 
 - sudo rm -rf /etc/apt/sources.list.d/google.list
 
-# chrome remote 
+# 3. chrome remote 
 - google 계정 로그인 
 - chrome remote 수동 설치 
 - PC 등록 
 
-# chrome remote setting 
+# 4. chrome remote setting 
 - sudo nano /opt/google/chrome-remote-desktop/chrome-remote-desktop 
 ```
 1) 수정 
@@ -54,10 +54,10 @@ def launch_session(self, x_args):
     
 ```
 
-# 잠금 해제 
+# 5. 잠금 해제 
 - 설정 -> Privacy -> Screen Lock 가서 모두 never, disable 로 설정 
 
-# mariadb install 
+# 6. mariadb install 
 - sudo apt install mariadb-server
 - sudo mysql_secure_installation
   - enter 
@@ -66,7 +66,7 @@ def launch_session(self, x_args):
 - sudo mysql -uroot -p
   - root 비번 입력 
 
-# nodejs, npm, pm2 install 
+# 7. nodejs, npm, pm2 install 
 - sudo apt install nodejs
 - sudo apt install npm
 - sudo -s
