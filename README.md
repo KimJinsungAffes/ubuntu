@@ -63,4 +63,7 @@ def launch_session(self, x_args):
 - sudo mysql -uroot -p
   - root 비번 입력 
 
-
+# nodejs, npm, pm2 install 
+- sudo apt install nodejs
+- sudo apt install npm
+- npm install pm2 -g
