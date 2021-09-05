@@ -20,5 +20,6 @@
 
 # chrome remote setting 
 - sudo usermod -a -G chrome-remote-desktop [계정이름]
-- /opt/google/chrome-remote-desktop/chrome-remote-desktop
+- sudo nano /opt/google/chrome-remote-desktop/chrome-remote-desktop 
+  - FIRST_X_DISPLAY_NUMBER = 0
 
