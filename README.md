@@ -66,4 +66,5 @@ def launch_session(self, x_args):
 # nodejs, npm, pm2 install 
 - sudo apt install nodejs
 - sudo apt install npm
+- sudo -s
 - npm install pm2 -g
