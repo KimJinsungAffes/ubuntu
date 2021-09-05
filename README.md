@@ -22,11 +22,6 @@
 - sudo usermod -a -G chrome-remote-desktop [계정이름]
 - sudo nano /opt/google/chrome-remote-desktop/chrome-remote-desktop 
 `
-1) 수정 
-- FIRST_X_DISPLAY_NUMBER = 0
-  
-2) 주석 
-- #while os.path.exists(X_LOCK_FILE_TEMPLATE % display):
-- #     display += 1
-
+sfsdfsdf
+sdfsdf
 `
