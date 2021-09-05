@@ -53,3 +53,14 @@ def launch_session(self, x_args):
     #self._launch_x_session()
     
 ```
+
+# mariadb install 
+- sudo apt install mariadb-server
+- sudo mysql_secure_installation
+  - enter 
+  - root 비번 설정 
+  - y, n, y, y 
+- sudo mysql -uroot -p
+  - root 비번 입력 
+
+
