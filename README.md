@@ -29,4 +29,19 @@
 - #while os.path.exists(X_LOCK_FILE_TEMPLATE % display):
 - #     display += 1
 
+3) 수정 
+- launch_session 함수를 찾아 수정한다. _launch_x_server()와 _launch_x_session()을 주석처리해서 새로운 display가 생성되지 않게 한다.
+  그리고 두줄의 코드를 추가하여 기존의 디스플에이를 사용한다. 이제 파일을 저장하고 편집 툴을 종료한다.
+
+def launch_session(self, x_args):
+    self._init_child_env()
+    self._setup_pulseaudio()
+    self._setup_gnubby()
+    # 주석처리
+    #self._launch_x_server(x_args)
+    #self._launch_x_session()
+    # 추가코드 두줄
+    display = self.get_unused_display_number()
+    self.child_env["DISPLAY"] = ":%d" % display
+    
 ```
