@@ -18,5 +18,7 @@
 - sudo apt-get install google-chrome-stable
 - sudo rm -rf /etc/apt/sources.list.d/google.list
 
+# chrome remote setting 
+- sudo usermod -a -G chrome-remote-desktop [계정이름]
 
 
