@@ -54,6 +54,9 @@ def launch_session(self, x_args):
     
 ```
 
+# 잠금 해제 
+- 설정 -> Privacy -> Screen Lock 가서 모두 never, disable 로 설정 
+
 # mariadb install 
 - sudo apt install mariadb-server
 - sudo mysql_secure_installation
