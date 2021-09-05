@@ -20,5 +20,5 @@
 
 # chrome remote setting 
 - sudo usermod -a -G chrome-remote-desktop [계정이름]
-
+- /opt/google/chrome-remote-desktop/chrome-remote-desktop
 
