@@ -19,7 +19,6 @@
 - sudo rm -rf /etc/apt/sources.list.d/google.list
 
 # chrome remote setting 
-- sudo usermod -a -G chrome-remote-desktop [계정이름]
 - sudo nano /opt/google/chrome-remote-desktop/chrome-remote-desktop 
 ```
 1) 수정 
