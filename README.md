@@ -7,7 +7,7 @@
 - (pass) sudo passwd root 
   - 현재 계정 비번 
   - root 비번 
-- (pass) nano /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf
+- (pass) sudo nano /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf
   - greeter-show-manual-login=true 추가 
 - (pass) 로그아웃 및 root 로그인 
 - reboot 
