@@ -122,6 +122,14 @@ def launch_session(self, x_args):
 - pm2 start ecosystem.config.js
 
 # 12. startup set 
-- sudo -s
-- pm2 startup 
-- pm2 save 
+- pm2 
+  - sudo -s
+  - pm2 startup 
+  - pm2 save 
+- chrome 
+  - application search
+  - startup application ..
+  - add
+    - Name: chrome
+    - Command: /usr/bin/google-chrome // terminal: which google-chrome 명령어로 확인 가능 
+    - Command: google-chrome
