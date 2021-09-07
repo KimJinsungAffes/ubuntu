@@ -121,3 +121,7 @@ def launch_session(self, x_args):
     - SERIAL_PORT_RELAY: '/dev/ttyS4'
 - pm2 start ecosystem.config.js
 
+# 12. startup set 
+- sudo -s
+- pm2 startup 
+- pm2 save 
