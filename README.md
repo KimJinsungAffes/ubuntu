@@ -97,5 +97,9 @@ def launch_session(self, x_args):
 - unzip elefarm-gw.zip 
 - cd elefarm-gw-main/back
 - yarn install 
-
+- cd dataHandler
+- local DB table 생성 
+  - node index.js 
+- sudo -s
+- node sensorBYS.js 
 
