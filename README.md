@@ -57,7 +57,15 @@ def launch_session(self, x_args):
 # 5. 잠금 해제 
 - 설정 -> Privacy -> Screen Lock 가서 모두 never, disable 로 설정 
 
-# 6. mariadb install 
+# 6. coms port permission 
+- (pass) dmesg | grep tty
+- (pass) ls -l /dev/ttyS1
+- (pass) 현재 사용자가 속한 그룹들을 확인
+  - id -Gn 
+  - https://yaraba.tistory.com/613
+- sudo adduser $USER dialout 
+
+# 7. mariadb install 
 - sudo apt install mariadb-server
 - sudo mysql_secure_installation
   - enter 
@@ -68,17 +76,17 @@ def launch_session(self, x_args):
 - create database elefarm;
 - quit;
 
-# 7. nodejs, npm, yarn, pm2 install 
+# 8. nodejs, npm, yarn, pm2 install 
 - sudo apt install nodejs
 - sudo apt install npm
 - sudo -s
 - npm install yarn -g 
 - npm install pm2 -g
 
-# (pass) 8. vscode install 
-- root 계정으로 로그인 후 vscode 설치 
+# 9. vscode install 
+- vscode 수동 설치 
 
-# 9. code upload 
+# 10. code download  
 - github elefarm-gw zip file download at Desktop 
   - https://github.com/KimJinsungAffes/elefarm-gw
 - cd Desktop
@@ -87,10 +95,4 @@ def launch_session(self, x_args):
 - cd elefarm-gw-main/back
 - yarn install 
 
-# 10. coms port permission 
-- (pass) dmesg | grep tty
-- (pass) ls -l /dev/ttyS1
-- (pass) 현재 사용자가 속한 그룹들을 확인
-  - id -Gn 
-  - https://yaraba.tistory.com/613
-- sudo adduser $USER dialout 
+
