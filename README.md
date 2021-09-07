@@ -87,5 +87,8 @@ def launch_session(self, x_args):
 - cd elefarm-gw-main/back
 - yarn install 
 
-# (pass) ubuntu list coms converter 
+# (pass) ubuntu coms serial port 
 - dmesg | grep tty
+- id -Gn
+- sudo adduser $USER dialout 
+  - https://yaraba.tistory.com/613
