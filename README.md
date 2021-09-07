@@ -101,9 +101,7 @@ def launch_session(self, x_args):
 - sudo gdebi GitHubDesktop-linux-2.6.3-linux1.deb
   - https://gist.github.com/berkorbay/6feda478a00b0432d13f1fc0a50467f1
 
-# 11. com1
 # 11. code exec 
-
 - github elefarm-gw zip file download at Desktop 
   - https://github.com/KimJinsungAffes/elefarm-gw
 - cd Desktop
