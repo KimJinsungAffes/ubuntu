@@ -57,13 +57,19 @@ def launch_session(self, x_args):
 # 5. 잠금 해제 
 - 설정 -> Privacy -> Screen Lock 가서 모두 never, disable 로 설정 
 
-# 6. coms port permission 
-- (pass) dmesg | grep tty
-- (pass) ls -l /dev/ttyS1
-- (pass) 현재 사용자가 속한 그룹들을 확인
-  - id -Gn 
-  - https://yaraba.tistory.com/613
-- sudo adduser $USER dialout 
+# 6. coms port  
+- set permission
+  - (pass) dmesg | grep tty
+  - (pass) ls -l /dev/ttyS1
+  - (pass) 현재 사용자가 속한 그룹들을 확인
+    - id -Gn 
+    - https://yaraba.tistory.com/613
+  - sudo adduser $USER dialout 
+- set sensor, relay board port 
+  - default 
+    - sensor PCB: com2 (com2, com3, com4)
+    - sensor BYS: com4 (com2, com3, com4)
+    - relay  PCB: com5 (com5, com6)
 
 # 7. mariadb install 
 - sudo apt install mariadb-server
@@ -95,17 +101,21 @@ def launch_session(self, x_args):
 - sudo gdebi GitHubDesktop-linux-2.6.3-linux1.deb
   - https://gist.github.com/berkorbay/6feda478a00b0432d13f1fc0a50467f1
 
-# 11. code download  
+# 11. com1
+# 11. code exec 
+
 - github elefarm-gw zip file download at Desktop 
   - https://github.com/KimJinsungAffes/elefarm-gw
 - cd Desktop
-- mv /home/farm01/Downloads/elefarm-gw-main.zip ./
-- unzip elefarm-gw.zip 
-- cd elefarm-gw-main/back
+- mv ../Downloads/elefarm-gw-main.zip ./
+- unzip elefarm-gw-main.zip 
+- cd elefarm-gw-main
 - yarn install 
-- cd dataHandler
-- local DB table 생성 
-  - node index.js 
 - sudo -s
-- node sensorBYS.js 
+- set coms port 
+  - nano ecosystem.config.js
+    - SERIAL_PORT_PCB: '/dev/ttyS1'
+    - SERIAL_PORT_BYS: '/dev/ttyS3'
+    - SERIAL_PORT_RELAY: '/dev/ttyS4'
+- pm2 start ecosystem.config.js
 
