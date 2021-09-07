@@ -81,7 +81,8 @@ def launch_session(self, x_args):
 # 9. code upload 
 - github elefarm-gw zip file download at Desktop 
   - https://github.com/KimJinsungAffes/elefarm-gw
+- cd Desktop
+- mv /home/farm01/Downloads/elefarm-gw-main.zip ./
 - unzip elefarm-gw.zip 
-- cd Desktop/elefarm-gw/back 
-- sudo -s
+- cd elefarm-gw-main/back
 - yarn install 
