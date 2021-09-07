@@ -89,6 +89,6 @@ def launch_session(self, x_args):
 
 # (pass) ubuntu coms serial port 
 - dmesg | grep tty
-- id -Gn
+- id -Gn // 현재 사용자가 속한 그룹들을 확인
 - sudo adduser $USER dialout 
   - https://yaraba.tistory.com/613
