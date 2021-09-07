@@ -87,10 +87,10 @@ def launch_session(self, x_args):
 - cd elefarm-gw-main/back
 - yarn install 
 
-# (pass) ubuntu coms serial port 
-- dmesg | grep tty
-- ls -l /dev/ttyS1
-- 현재 사용자가 속한 그룹들을 확인
+# 10. coms port permission 
+- (pass) dmesg | grep tty
+- (pass) ls -l /dev/ttyS1
+- (pass) 현재 사용자가 속한 그룹들을 확인
   - id -Gn 
-- sudo adduser $USER dialout 
   - https://yaraba.tistory.com/613
+- sudo adduser $USER dialout 
