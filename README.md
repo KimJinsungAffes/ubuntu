@@ -73,6 +73,9 @@ def launch_session(self, x_args):
   - y, n, y, y 
 - sudo mysql -uroot -p
   - root 비번 입력 
+- use mysql;
+- update user set plugin='mysql_native_password' where user='root';
+- flush privileges;
 - create database elefarm;
 - quit;
 
