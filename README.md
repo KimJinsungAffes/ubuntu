@@ -66,6 +66,7 @@ def launch_session(self, x_args):
 - sudo mysql -uroot -p
   - root 비번 입력 
 - create database elefarm;
+- quit;
 
 # 7. nodejs, npm, yarn, pm2 install 
 - sudo apt install nodejs
