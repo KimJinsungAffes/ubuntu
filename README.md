@@ -86,3 +86,6 @@ def launch_session(self, x_args):
 - unzip elefarm-gw.zip 
 - cd elefarm-gw-main/back
 - yarn install 
+
+# (pass) ubuntu list coms converter 
+- dmesg | grep tty
