@@ -110,6 +110,10 @@ def launch_session(self, x_args):
 - cd elefarm-gw-main
 - yarn install 
 - sudo -s
+- set farmSeq, gatewayNo
+  - nano back/gateway/config/env.config.js
+    - farmSeq: 491
+    - gatewayNo: 'GW01',
 - set coms port 
   - nano ecosystem.config.js
     - SERIAL_PORT_PCB: '/dev/ttyS1'
