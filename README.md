@@ -134,3 +134,5 @@ def launch_session(self, x_args):
     - Command: /usr/bin/google-chrome // terminal: which google-chrome 명령어로 확인 가능 
     - Command: google-chrome
   - set chrome default page as elefarm.net
+
+# (pass) 13. display set as mirror 
