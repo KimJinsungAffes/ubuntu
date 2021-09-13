@@ -91,6 +91,7 @@ def launch_session(self, x_args):
 - sudo -s
 - npm install yarn -g 
 - npm install pm2 -g
+- exit
 
 # 9. vscode install 
 - vscode 수동 설치 
