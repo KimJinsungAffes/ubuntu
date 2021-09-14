@@ -4,12 +4,14 @@
 - sudo apt-get update 
 - sudo apt install lightdm 
   - lightdm 선택 
-- (pass) sudo passwd root 
+- sudo passwd root 
   - 현재 계정 비번 
   - root 비번 
-- (pass) sudo nano /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf
+- sudo nano /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf
   - greeter-show-manual-login=true 추가 
-- (pass) 로그아웃 및 root 로그인 
+- reboot 
+- root 로그인 
+- 설정 -> Users -> Automatic Login 껏다 켜기 
 - reboot 
 
 # 2. chrome install 
