@@ -4,15 +4,16 @@
 - sudo apt-get update 
 - sudo apt install lightdm 
   - lightdm 선택 
-- sudo passwd root 
-  - 현재 계정 비번 
-  - root 비번 
-- sudo nano /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf
-  - greeter-show-manual-login=true 추가 
-- reboot 
-- root 로그인 
-- 설정 -> Users -> Automatic Login 껏다 켜기 
-- reboot 
+- 자동로그인 설정 
+  - sudo passwd root 
+    - 현재 계정 비번 
+    - root 비번 
+  - sudo nano /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf
+    - greeter-show-manual-login=true 추가 
+  - reboot 
+  - root 로그인 
+  - 설정 -> Users -> Automatic Login 껏다 켜기 
+  - reboot 
 
 # 2. chrome install 
 - (pass) sudo apt-get update 
@@ -25,9 +26,8 @@
 # 3. chrome remote 
 - google 계정 로그인 
 - chrome remote 수동 설치 
+- reboot 
 - PC 등록 
-
-# 4. chrome remote setting 
 - sudo nano /opt/google/chrome-remote-desktop/chrome-remote-desktop 
 ```
 1) 수정 
@@ -56,10 +56,10 @@ def launch_session(self, x_args):
     
 ```
 
-# 5. 잠금 해제 
+# 4. 잠금 해제 
 - 설정 -> Privacy -> Screen Lock 가서 모두 never, disable 로 설정 
 
-# 6. coms port  
+# 5. coms port  
 - set permission
   - (pass) dmesg | grep tty
   - (pass) ls -l /dev/ttyS1
@@ -73,7 +73,7 @@ def launch_session(self, x_args):
     - sensor BYS: com4 (com2, com3, com4)
     - relay  PCB: com5 (com5, com6)
 
-# 7. mariadb install 
+# 6. mariadb install 
 - sudo apt install mariadb-server
 - sudo mysql_secure_installation
   - enter 
@@ -87,7 +87,7 @@ def launch_session(self, x_args):
 - create database elefarm;
 - quit;
 
-# 8. nodejs, npm, yarn, pm2 install 
+# 7. nodejs, npm, yarn, pm2 install 
 - sudo apt install nodejs
 - sudo apt install npm
 - sudo -s
@@ -95,16 +95,16 @@ def launch_session(self, x_args):
 - npm install pm2 -g
 - exit
 
-# 9. vscode install 
+# 8. vscode install 
 - vscode 수동 설치 
 
-# (pass) 10. github install 
+# (pass) 9. github install 
 - sudo wget https://github.com/shiftkey/desktop/releases/download/release-2.6.3-linux1/GitHubDesktop-linux-2.6.3-linux1.deb
 - sudo apt install gdebi
 - sudo gdebi GitHubDesktop-linux-2.6.3-linux1.deb
   - https://gist.github.com/berkorbay/6feda478a00b0432d13f1fc0a50467f1
 
-# 11. code exec 
+# 10. code exec 
 - github elefarm-gw zip file download at Desktop 
   - https://github.com/KimJinsungAffes/elefarm-gw
 - cd Desktop
@@ -124,7 +124,7 @@ def launch_session(self, x_args):
     - SERIAL_PORT_RELAY: '/dev/ttyS4'
 - pm2 start ecosystem.config.js
 
-# 12. startup set 
+# 11. startup set 
 - pm2 
   - sudo -s
   - pm2 startup 
@@ -138,4 +138,4 @@ def launch_session(self, x_args):
     - Command: google-chrome
   - set chrome default page as elefarm.net
 
-# (pass) 13. display set as mirror 
+# (pass) 12. display set as mirror 
