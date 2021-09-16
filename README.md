@@ -70,7 +70,7 @@ def launch_session(self, x_args):
 - set sensor, relay board port 
   - default 
     - sensor PCB: com2 (com2, com3, com4)
-    - sensor BYS: com4 (com2, com3, com4)
+    - sensor MZZ: com4 (com2, com3, com4)
     - relay  PCB: com5 (com5, com6)
 
 # 6. mariadb install 
@@ -120,7 +120,7 @@ def launch_session(self, x_args):
 - set coms port 
   - nano ecosystem.config.js
     - SERIAL_PORT_PCB: '/dev/ttyS1'
-    - SERIAL_PORT_BYS: '/dev/ttyS3'
+    - SERIAL_PORT_MZZ: '/dev/ttyS3'
     - SERIAL_PORT_RELAY: '/dev/ttyS4'
 - pm2 start ecosystem.config.js
 
