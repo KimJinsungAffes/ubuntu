@@ -140,7 +140,7 @@ def launch_session(self, x_args):
 
 # (pass) 12. display set as mirror 
 
-# (pass) exception 
+# (pass) 99. exception 
 ``` 
 Failure: File system check of the root filesystem failed
 The root filesystem on /dev/sda5 requires a manual fsck 
