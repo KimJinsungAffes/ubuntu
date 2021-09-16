@@ -139,3 +139,12 @@ def launch_session(self, x_args):
   - set chrome default page as elefarm.net
 
 # (pass) 12. display set as mirror 
+
+# (pass) exception 
+``` 
+1. Failure: File system check of the root filesystem failed
+   The root filesystem on /dev/sda5 requires a manual fsck 
+- fsck -yf /dev/sda5
+  - https://askubuntu.com/questions/885062/root-file-system-requires-manual-fsck
+
+```
