@@ -147,3 +147,9 @@ The root filesystem on /dev/sda5 requires a manual fsck
 ```
 - fsck -yf /dev/sda5
   - https://askubuntu.com/questions/885062/root-file-system-requires-manual-fsck
+
+```
+Reset user password
+```
+- sudo passwd farm10
+  - https://www.cyberciti.biz/faq/change-a-user-password-in-ubuntu-linux-using-passwd/
