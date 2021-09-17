@@ -138,7 +138,12 @@ def launch_session(self, x_args):
     - Command: google-chrome
   - set chrome default page as elefarm.net
 
-# (pass) 12. display set as mirror 
+# 12. korean keyboard set
+- 설정 -> Region & Language -> Manage Installed Languages => install 
+- reboot 
+- 설정 -> Region & Language -> + -> Korean (Hangul)
+
+# (pass) 13. display set as mirror 
 
 # (pass) 99. exception 
 ``` 
