@@ -142,6 +142,7 @@ def launch_session(self, x_args):
 - 설정 -> Region & Language -> Manage Installed Languages => install 
 - reboot 
 - 설정 -> Region & Language -> + -> Korean (Hangul)
+  - (pass) 한국어-영어 전환 : Shift + Blank 
 
 # (pass) 13. display set as mirror 
 
