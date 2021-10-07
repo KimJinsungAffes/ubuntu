@@ -145,7 +145,7 @@ def launch_session(self, x_args):
   - (pass) 한국어-영어 전환 : Shift + Blank 
 
 # 13. check list 
-- cup usage check 
+- cup & memory usage check 
   - top -i
     - Ex. tracker-store eats a huge load of CPU
       - tracker reset --hard 
