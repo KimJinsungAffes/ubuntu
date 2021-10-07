@@ -150,6 +150,8 @@ def launch_session(self, x_args):
     - Ex. tracker-store eats a huge load of CPU
       - tracker reset --hard 
       - y
+- disk usage check 
+  - df -h // df => disk free 
 
 # (pass) 14. display set as mirror 
 
