@@ -144,12 +144,17 @@ def launch_session(self, x_args):
 - 설정 -> Region & Language -> + -> Korean (Hangul)
   - (pass) 한국어-영어 전환 : Shift + Blank 
 
+# 13. tool install 
+- sudo apt-get update
+- sudo apt install htop
+
 # 13. check list 
 - cup & memory usage check 
   - top -i
     - Ex. tracker-store eats a huge load of CPU
       - tracker reset --hard 
       - y
+  - htop 
 - disk usage check 
   - df -h // df => disk free 
   - du -sh * // 현재 디렉토리 사용량, du => disk usage 
