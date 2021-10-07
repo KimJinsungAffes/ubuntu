@@ -152,6 +152,7 @@ def launch_session(self, x_args):
       - y
 - disk usage check 
   - df -h // df => disk free 
+  - du -sh * // 현재 디렉토리 사용량, du => disk usage 
 
 # (pass) 14. display set as mirror 
 
