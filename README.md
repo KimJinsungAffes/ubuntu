@@ -147,6 +147,7 @@ def launch_session(self, x_args):
 # 13. tool install 
 - sudo apt-get update
 - sudo apt install htop
+- sudo apt install net-tools
 
 # 13. check list 
 - cup & memory usage check 
@@ -158,7 +159,9 @@ def launch_session(self, x_args):
 - disk usage check 
   - df -h // df => disk free 
   - du -sh * // 현재 디렉토리 사용량, du => disk usage 
-- ip addr 
+- ip check 
+  - ip addr
+  - ifconfig 
 
 # (pass) 14. display set as mirror 
 
