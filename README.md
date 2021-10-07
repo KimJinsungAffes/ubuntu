@@ -151,7 +151,7 @@ def launch_session(self, x_args):
 Failure: File system check of the root filesystem failed
 The root filesystem on /dev/sda5 requires a manual fsck 
 ```
-- fsck -yf /dev/sda5
+- fsck -yf /dev/sda2
   - https://askubuntu.com/questions/885062/root-file-system-requires-manual-fsck
 
 ```
