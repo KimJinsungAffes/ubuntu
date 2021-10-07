@@ -144,7 +144,14 @@ def launch_session(self, x_args):
 - 설정 -> Region & Language -> + -> Korean (Hangul)
   - (pass) 한국어-영어 전환 : Shift + Blank 
 
-# (pass) 13. display set as mirror 
+# 13. check list 
+- cup usage check 
+  - top -i
+    - Ex. tracker-store eats a huge load of CPU
+      - tracker reset --hard 
+      - y
+
+# (pass) 14. display set as mirror 
 
 # (pass) 99. exception 
 ``` 
