@@ -148,6 +148,7 @@ def launch_session(self, x_args):
 - sudo apt-get update
 - sudo apt install htop
 - sudo apt install net-tools
+- sudo apt install ncdu
 
 # 13. check list 
 - cup & memory usage check 
@@ -159,6 +160,8 @@ def launch_session(self, x_args):
 - disk usage check 
   - df -h // df => disk free 
   - du -sh * // 현재 디렉토리 사용량, du => disk usage 
+  - lsblk -f
+  - ncdu /
 - ip check 
   - ip addr
   - ifconfig 
