@@ -170,6 +170,7 @@ def launch_session(self, x_args):
 
 # (pass) 98. SQL patch 
 - alter table TSensorData add column dataBuffer varchar(4000);
+- drop table TEquipStatus;
 
 # (pass) 99. exception 
 ``` 
