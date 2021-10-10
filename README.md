@@ -169,8 +169,9 @@ def launch_session(self, x_args):
 # (pass) 14. display set as mirror 
 
 # (pass) 98. SQL patch 
-- alter table TSensorData add column dataBuffer varchar(4000);
-- drop table TEquipStatus;
+- v21.10.06
+  - alter table TSensorData add column dataBuffer varchar(4000);
+  - drop table TEquipStatus;
 
 # (pass) 99. exception 
 ``` 
