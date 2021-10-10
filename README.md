@@ -150,7 +150,7 @@ def launch_session(self, x_args):
 - sudo apt install net-tools
 - sudo apt install ncdu
 
-# 13. check list 
+# 14. check list 
 - cup & memory usage check 
   - top -i
     - Ex. tracker-store eats a huge load of CPU
@@ -166,11 +166,12 @@ def launch_session(self, x_args):
   - ip addr
   - ifconfig 
 
-# (pass) 14. display set as mirror 
+# (pass) 15. display set as mirror 
 
 # (pass) 98. SQL patch 
 - v21.10.06
   - alter table TSensorData add column dataBuffer varchar(4000);
+  - alter table TEquip add column isLock varchar(1);
   - drop table TEquipStatus;
 
 # (pass) 99. exception 
