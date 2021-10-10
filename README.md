@@ -168,6 +168,9 @@ def launch_session(self, x_args):
 
 # (pass) 14. display set as mirror 
 
+# (pass) 98. SQL patch 
+- alter table TSensorData add column dataBuffer varchar(4000);
+
 # (pass) 99. exception 
 ``` 
 Failure: File system check of the root filesystem failed
