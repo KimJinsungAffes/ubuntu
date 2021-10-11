@@ -170,9 +170,10 @@ def launch_session(self, x_args):
 
 # (pass) 98. SQL patch 
 - v21.10.06
-  - alter table TSensorData add column dataBuffer varchar(4000);
   - alter table TEquip add column isLock varchar(1);
   - drop table TEquipStatus;
+- v21.10.11
+  - alter table TSensorData add column dataBuffer varchar(4000);
 
 # (pass) 99. exception 
 ``` 
