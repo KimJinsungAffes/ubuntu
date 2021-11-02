@@ -174,7 +174,10 @@ def launch_session(self, x_args):
   - drop table TEquipStatus;
 - v21.10.11
   - alter table TSensorData add column dataBuffer varchar(4000);
-
+- v21.11.02
+  - create index IDX_TSensorData on TSensorData(farmSeq,sensorSeq,dateTimeTo);
+  - create index IDX2_TSensorData on TSensorData(farmSeq,gatewayNo,dateTimeTo);
+          
 # (pass) 99. exception 
 ``` 
 Failure: File system check of the root filesystem failed
