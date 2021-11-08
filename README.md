@@ -160,6 +160,8 @@ def launch_session(self, x_args):
 - disk usage check 
   - df -h // df => disk free 
   - du -sh * // 현재 디렉토리 사용량, du => disk usage 
+    - cd /root/.pm2/logs/
+    - du -sh *  
   - lsblk -f
   - ncdu /
 - ip check 
