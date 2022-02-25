@@ -86,6 +86,8 @@ def launch_session(self, x_args):
 - flush privileges;
 - create database elefarm;
 - quit;
+- (pass) service mysql restart 
+- (pass) service mysql status 
 
 # 7. nodejs, npm, yarn, pm2 install 
 - sudo apt install nodejs
@@ -94,6 +96,9 @@ def launch_session(self, x_args):
 - npm install yarn -g 
 - npm install pm2 -g
 - exit
+
+# 7-1. pm2 log file 
+- (pass) cd /root/.pm2/logs 
 
 # 8. vscode install 
 - vscode 수동 설치 
@@ -167,6 +172,9 @@ def launch_session(self, x_args):
 - ip check 
   - ip addr
   - ifconfig 
+- clear disk 
+  - sudo find /data -printf '%s %p\n'| sort -nr | head -10 // find big size files (detail) 
+  - sudo journalctl --disk-usage && sudo journalctl --vacuum-time=7d // clear old systemd logs 
 
 # (pass) 15. display set as mirror 
 
