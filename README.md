@@ -173,7 +173,7 @@ def launch_session(self, x_args):
   - ip addr
   - ifconfig 
 - clear disk 
-  - sudo find /data -printf '%s %p\n'| sort -nr | head -10 // find big size files (detail) 
+  - sudo find / -printf '%s %p\n'| sort -nr | head -10 // find big size files (detail) 
   - sudo journalctl --disk-usage && sudo journalctl --vacuum-time=7d // clear old systemd logs 
 
 # (pass) 15. display set as mirror 
