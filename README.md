@@ -95,6 +95,7 @@ def launch_session(self, x_args):
 - sudo -s
 - npm install yarn -g 
 - npm install pm2 -g
+- pm2 install pm2-logrotate
 - exit
 
 # (pass) 7-1. pm2 log file 
