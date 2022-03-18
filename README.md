@@ -15,7 +15,7 @@
   - 설정 -> Users -> Automatic Login 껏다 켜기 
   - reboot 
 
-# 2. chrome install 
+# (pass) 2. chrome install 
 - (pass) sudo apt-get update 
 - wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 - sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
@@ -23,7 +23,7 @@
 - chrome 수동 설치 
 - sudo rm -rf /etc/apt/sources.list.d/google.list
 
-# 3. chrome remote 
+# (pass) 3. chrome remote 
 - google 계정 로그인 
 - chrome remote 수동 설치 
 - reboot 
@@ -67,7 +67,7 @@ def launch_session(self, x_args):
     - id -Gn 
     - https://yaraba.tistory.com/613
   - sudo adduser $USER dialout 
-- set sensor, relay board port 
+- (pass) set sensor, relay board port 
   - default 
     - sensor PCB: com2 (com2, com3, com4)
     - sensor MZZ: com4 (com2, com3, com4)
@@ -95,9 +95,10 @@ def launch_session(self, x_args):
 - sudo -s
 - npm install yarn -g 
 - npm install pm2 -g
+- pm2 install pm2-logrotate
 - exit
 
-# 7-1. pm2 log file 
+# (pass) 7-1. pm2 log file 
 - (pass) cd /root/.pm2/logs 
 
 # 8. vscode install 
@@ -109,7 +110,7 @@ def launch_session(self, x_args):
 - sudo gdebi GitHubDesktop-linux-2.6.3-linux1.deb
   - https://gist.github.com/berkorbay/6feda478a00b0432d13f1fc0a50467f1
 
-# 10. code exec 
+# (pass) 10. code exec 
 - github elefarm-gw zip file download at Desktop 
   - https://github.com/KimJinsungAffes/elefarm-gw
 - cd Desktop
