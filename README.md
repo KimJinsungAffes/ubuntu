@@ -110,27 +110,61 @@ def launch_session(self, x_args):
 - sudo gdebi GitHubDesktop-linux-2.6.3-linux1.deb
   - https://gist.github.com/berkorbay/6feda478a00b0432d13f1fc0a50467f1
 
-# (pass) 10. code exec 
-- github elefarm-gw zip file download at Desktop 
+# 10. code exec 
+- (pass) github elefarm-gw zip file download at Desktop 
   - https://github.com/KimJinsungAffes/elefarm-gw
-- cd Desktop
-- mv ../Downloads/elefarm-gw-main.zip ./
-- unzip elefarm-gw-main.zip 
-- cd elefarm-gw-main
-- yarn install 
+- (pass) cd Desktop
+- (pass) mv ../Downloads/elefarm-gw-main.zip ./
+- (pass) unzip elefarm-gw-main.zip 
+- (pass) cd elefarm-gw-main
+
 - sudo -s
-- set farmSeq, gatewayNo
-  - nano back/gateway/config/env.config.js
-    - farmSeq: 491
-    - gatewayNo: 'GW01',
-- set coms port 
-  - nano ecosystem.config.js
+- apt-get update 
+- apt-get install git-core 
+- (pass) git version 
+- mkdir github 
+- cd github
+- git init 
+- git remote add origin https://github.com/KimJinsungAffes/elefarm-gw.git
+- git config --global credential.helper store
+- git pull origin live 
+  - username & password 는 관리자한테 문의 
+- cp ecosystem.config.js.dist ./ecosystem.config.js
+  - set coms port 
+  - nano ./ecosystem.config.js
     - SERIAL_PORT_PCB: '/dev/ttyS1'
+    - SERIAL_PORT_WXA: '/dev/ttyS2'
     - SERIAL_PORT_MZZ: '/dev/ttyS3'
     - SERIAL_PORT_RELAY: '/dev/ttyS4'
-- pm2 start ecosystem.config.js
+  - (pass) cp /home/farm/Desktop/elefarm-gw-main/ecosystem.config.js ./
+- cp ./back/gateway/config/env.config.js.dist ./back/gateway/config/env.config.js 
+  - set farmSeq, gatewayNo
+  - nano ./back/gateway/config/env.config.js
+    - farmSeq: 491
+    - gatewayNo: 'GW01',
+  - (pass) cp /home/farm/Desktop/elefarm-gw-main/back/gateway/config/env.config.js ./back/gateway/config/
+- yarn install 
+- pm2 start 
+- (pass) pm2 list 
+- (pass) pm2 log INIT
+- (pass) pm2 log PCB
+- (pass) pm2 log WXA
+- (pass) pm2 log MZZ
+- (pass) pm2 log SOCKET
+- (pass) pm2 info INIT
+- (pass) pm2 stop all 
+- (pass) pm2 delete all 
 
-# 11. startup set 
+# 11. auto patch crontab  
+  - 설명 : patch는 1분 단위로 바로 gateway pc에 하고.. 실 적용은 수동으로 하거나.. 새벽 3시에 적용 자동 적용 됨 
+- crontab -e
+  - nano edit로 선택 
+  - */1 * * * * cd /home/farm/github && git pull origin live 
+- service cron start 
+- service cron status  
+- (pass) crontab -l
+
+# 12. startup set 
 - pm2 
   - sudo -s
   - pm2 startup 
@@ -144,19 +178,19 @@ def launch_session(self, x_args):
     - Command: google-chrome
   - set chrome default page as elefarm.net
 
-# 12. korean keyboard set
+# 13. korean keyboard set
 - 설정 -> Region & Language -> Manage Installed Languages => install 
 - reboot 
 - 설정 -> Region & Language -> + -> Korean (Hangul)
   - (pass) 한국어-영어 전환 : Shift + Blank 
 
-# 13. tool install 
+# 14. tool install 
 - sudo apt-get update
 - sudo apt install htop
 - sudo apt install net-tools
 - sudo apt install ncdu
 
-# 14. check list 
+# 15. check list 
 - cup & memory usage check 
   - top -i
     - Ex. tracker-store eats a huge load of CPU
@@ -177,7 +211,7 @@ def launch_session(self, x_args):
   - sudo find / -printf '%s %p\n'| sort -nr | head -10 // find big size files (detail) 
   - sudo journalctl --disk-usage && sudo journalctl --vacuum-time=7d // clear old systemd logs 
 
-# (pass) 15. display set as mirror 
+# (pass) 16. display set as mirror 
 
 # (pass) 98. SQL patch 
 - v21.10.06
