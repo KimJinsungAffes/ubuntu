@@ -118,9 +118,8 @@ def launch_session(self, x_args):
 - (pass) unzip elefarm-gw-main.zip 
 - (pass) cd elefarm-gw-main
 
-- sudo -s
-- apt-get update 
-- apt-get install git-core 
+- sudo apt-get update 
+- sudo apt-get install git-core 
 - (pass) git version 
 - mkdir github 
 - cd github
@@ -144,6 +143,7 @@ def launch_session(self, x_args):
     - gatewayNo: 'GW01',
   - (pass) cp /home/farm/Desktop/elefarm-gw-main/back/gateway/config/env.config.js ./back/gateway/config/
 - yarn install 
+- sudo -s
 - pm2 start 
 - (pass) pm2 list 
 - (pass) pm2 log INIT
@@ -157,6 +157,7 @@ def launch_session(self, x_args):
 
 # 11. auto patch crontab  
   - 설명 : patch는 1분 단위로 바로 gateway pc에 하고.. 실 적용은 수동으로 하거나.. 새벽 3시에 적용 자동 적용 됨 
+  - 주의사항: 아래 사항은 root 계정이 아닌 ... ubuntu 계정으로 설정해야 함 
 - crontab -e
   - nano edit로 선택 
   - */1 * * * * cd /home/farm/github && git pull origin live 
